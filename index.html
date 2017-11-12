@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/render.css">
+
+</head>
+
+<body onload="startTime(), getDate()">
+<div class="wrapper">
+	<div id="dateTime">
+	<div>
+		<div id="clock">
+			<script src="js/clock.js"></script>
+			<span class="time" id="hour"></span><span class="blink" id="colon"></span><span class="time" id="minute"></span>
+		</div>
+		<div id="date">
+			<script src="js/date.js"></script>
+		</div>
+		</div>
+	</div>
+	<div>
+		<div id="header">HEADER</div>
+	</div>
+	<div>
+		<div id="weather">WEATHER</div>
+	</div>
+
+
+	<div>
+		<div class="sidebar" id="left">SIDEBAR
+	<button onclick="changeTZ(0)" id="sanFrancisco" class="buttonTZ">San Francisco</button>
+	<button onclick="changeTZ(3)" id="newYork" class="buttonTZ">New York</button>
+	<button onclick="changeTZ(8)" id="london" class="buttonTZ">London</button>
+	<button onclick="changeTZ(10)" id="kiev" class="buttonTZ">Kiev</button>
+		</div>
+	</div>
+	<div>
+		<div class="content" id="content">CONTENT</div>
+	</div>
+	<div>
+		<div class="sidebar" id="left">SIDEBAR</div>
+	</div>
+	<div></div>
+	<div>
+		<div id="footer">FOOTER</div>
+	</div>
+	<div></div>
+</div>
+</body>
+</html>
